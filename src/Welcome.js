@@ -1,0 +1,12 @@
+import React from "react";
+
+export class Welcome extends React.Component {
+  static defaultProps = {
+    // here defaultProps is a special keyword we must use.
+    name: "stranger",
+  };
+
+  render() {
+    return <p>Welcome, {this.props.name}!</p>;
+  }
+}
